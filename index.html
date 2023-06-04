@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title> Age calculator app</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ============ CONTAINER =========== -->
+    <div class="container">
+      <div class="content">
+        <!-- inputs -->
+
+        <div class="num">
+          <div class="input">
+            <label for="day">DAY</label>
+            <input type="number" placeholder="DD" min="1" max="31" id="day" required />
+            <small class="error-day"></small>
+          </div>
+
+          <div class="input">
+            <label for="month">MONTH</label>
+            <input type="number" placeholder="MM" min="1" max="31" id="month" required />
+            <small class="error-month"></small>
+          </div>
+
+          <div class="input">
+            <label for="year">YEAR</label>
+            <input type="number" placeholder="YYYY" min="1900" max="2023" id="year" required />
+            <small class="error-year"></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <button class="svg-icon" id="submit-btn">
+        <img src="./assets/images/icon-arrow.svg" alt="icon" />
+      </button>
+
+      <!-- outputs -->
+      <div class="down-content">
+        <div class="section">
+          <div class="calculate">
+            <h2><span id="output-year">--</span>years</h2>
+            <h2><span id="output-month">--</span>months</h2>
+            <h2><span id="output-day">--</span>days</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
